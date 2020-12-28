@@ -1,1 +1,14 @@
+header {
+    padding: 20px;
+    background: rgb(76, 76, 175);
+    text-align: center;
+}
+#container {
+    margin: auto;
+    text-align: center;
+}
 
+#input {
+    width: 300px;
+    border: 2px solid black;
+}

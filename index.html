@@ -1,1 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href= "style.css"></script>
+</head>
+<body>
+    <header>
+        <h1>Erikas Recipes</h1>
+    </header>
 
+<div id="container">
+<h1>Enter your food here</h1>
+
+<input id="input"  placeholder="Enter here">
+<br> <br>
+<button id="button">Submit</button>
+
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+ $(document).ready, $("button").click(function getrecipe() {
+    
+    var button = document.getElementById("button")
+    var queryURL = "https://developer.edamam.com/admin/applications/1409620931811?service_id=2555417725632" + food + "f609d91a7a153755e199fb8433e1fd2e"
+    
+     $.ajax({
+    url: queryURL,
+    method: "GET"
+    }).then(function(data) {
+        console.log(data)
+    }
+    
+    )
+ })
+
+
+
+
+
+
+</script>
+
+
+
+
+
+</body>
+</html>
